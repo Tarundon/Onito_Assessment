@@ -1,0 +1,53 @@
+/* Remove the default styles applied by dataTables.net */
+.table-container table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .table-container th,
+  .table-container td {
+    border: none;
+  }
+  
+  /* Add some spacing between table cells */
+  .table-container td,
+  .table-container th {
+    padding: 10px;
+  }
+  table.dataTable thead > tr >{
+    background-color: #4aac4a;
+  }
+  
+  /* Add some background color to the table headers */
+  .table-container th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Add some hover effects to table rows */
+  .table-container tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Add some responsive design to the table */
+  @media screen and (max-width: 600px) {
+    .table-container table,
+    .table-container thead,
+    .table-container tbody,
+    .table-container th,
+    .table-container td,
+    .table-container tr {
+      display: block;
+    }
+  
+    .table-container tbody tr {
+      margin-bottom: 20px;
+    }
+  
+    .table-container tbody td:before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+  
